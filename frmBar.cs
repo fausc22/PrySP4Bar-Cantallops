@@ -191,5 +191,10 @@ namespace PrySP4Bar_Cantallops
             txtPostre.Text = Convert.ToString(VecTotales[8]);
             txtTotal.Text = Convert.ToString(VecTotales[9]);
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

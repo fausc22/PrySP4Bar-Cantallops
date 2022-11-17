@@ -51,6 +51,7 @@
             this.txtBebidasin = new System.Windows.Forms.TextBox();
             this.txtBebidacon = new System.Windows.Forms.TextBox();
             this.txtPostre = new System.Windows.Forms.TextBox();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMozos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -247,12 +248,23 @@
             this.txtPostre.Size = new System.Drawing.Size(100, 20);
             this.txtPostre.TabIndex = 18;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(658, 462);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(111, 36);
+            this.btnSalir.TabIndex = 19;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(790, 523);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtPostre);
             this.Controls.Add(this.txtBebidacon);
             this.Controls.Add(this.txtBebidasin);
@@ -306,6 +318,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Bebidas1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Bebidas2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Postres;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 
